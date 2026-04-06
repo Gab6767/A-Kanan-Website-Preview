@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - A. Kanan Manpower Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            
+            <div class="nav-brand">
+                <img src="Assets/Logo.png" alt="A. Kanan Manpower" class="nav-logo" />
+            </div>
+            
+            <div class="nav-right-group">
+                <div class="primary-actions">
+                    <a href="index.html" class="nav-link nav-link-home">Home</a>
+                    <a href="apply.html" class="nav-link btn-apply">Apply Now</a>
+                    
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="menu-container">
+                    <button class="menu-toggle" id="menuBtn">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jobs.html">Job Opportunities</a></li>
+                        <li><a href="process.html">Recruitment Process</a></li>
+                        <li><a href="partners.html">Employers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Application Process</h1>
+            <p>Start Your Journey to an International Career</p>
+        </div>
+    </section>
+
+    <!-- Qualification Check -->
+    <section class="content-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>Qualification Check</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem; font-size: 1.05rem;">
+                Before applying, please ensure you meet our basic requirements. Self-assess your qualifications:
+            </p>
+            
+            <div class="step">
+                <h3>📅 Age Requirement</h3>
+                <p>You must comply with Philippine government regulations concerning worker age and international destination requirements. Generally, workers should be at least 21 years old with no upper age limit (varies by destination).</p>
+            </div>
+
+            <div class="step">
+                <h3>💼 Work Experience</h3>
+                <p>You should have relevant work experience in your field. Good work history demonstrates your skills and commitment. Minimum experience requirements vary by position and destination country.</p>
+            </div>
+
+            <div class="step">
+                <h3>🗣️ Language Proficiency</h3>
+                <p>English proficiency is required for most positions. Other language skills (Japanese, German, Arabic, etc.) are beneficial and may increase your employment opportunities.</p>
+            </div>
+
+            <div class="step">
+                <h3>🏥 Health & Medical Fitness</h3>
+                <p>You must be physically and mentally fit to work. Medical clearance is required. You will undergo a comprehensive health examination as part of the application process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="content-section">
+        <div class="container">
+            <h2>Application Form</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">
+                Fill out the form below to submit your application to our office branches.
+            </p>
+
+            <form style="max-width: 600px; margin: 0 auto; background: var(--light-bg); padding: 2rem; border-radius: 8px;" action="connect.php" method="POST">
+                <!-- Personal Information -->
+                <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid white;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Personal Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="fullname" name="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" name="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" name="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob" name="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" name="address">Address *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <!-- Professional Information -->
+                <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid white;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Professional Information</h3>
+                    
+                    <div class="form-group">
+                        <label for="position">Position of Interest *</label>
+                        <select id="position" name="position" required>
+                            <option value="">Select a position...</option>
+                            <option value="nurse">Nurse</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="engineer">Engineer</option>
+                            <option value="programmer">Programmer</option>
+                            <option value="household">Household Worker</option>
+                            <option value="hospitality">Hospitality Worker</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Preferred Destination *</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Select destination...</option>
+                            <option value="japan">Japan</option>
+                            <option value="usa">United States</option>
+                            <option value="germany">Germany</option>
+                            <option value="qatar">Qatar</option>
+                            <option value="saudi">Saudi Arabia</option>
+                            <option value="kuwait">Kuwait</option>
+                            <option value="malaysia">Malaysia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Years of Experience *</label>
+                        <input type="number" id="experience" name="experience" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Key Skills & Qualifications</label>
+                        <textarea id="skills" name="skills" placeholder="Describe your skills, certifications, and relevant qualifications..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Language Skills -->
+                <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 2px solid white;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Language Skills</h3>
+                    
+                    <div class="form-group">
+                        <label for="english">English Proficiency Level *</label>
+                        <select id="english" name="english" required>
+                            <option value="">Select level...</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="fluent">Fluent/Native</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="other-languages">Other Languages</label>
+                        <input type="text" id="other-languages" name="other-languages" placeholder="e.g., Japanese (Intermediate), Arabic (Basic)">
+                    </div>
+                </div>
+
+                <!-- Preferred Branch -->
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Preferred Office Branch</h3>
+                    
+                    <div class="form-group">
+                        <label for="branch">Select Branch *</label>
+                        <select id="branch" name="branch" required>
+                            <option value="">Select branch...</option>
+                            <option value="davao">Davao City (Main Office)</option>
+                            <option value="manila">Manila</option>
+                            <option value="gensan">General Santos</option>
+                            <option value="cdo">Cagayan De Oro</option>
+                            <option value="zamboanga">Zamboanga</option>
+                            <option value="nueva">Nueva Vizcaya</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Agreement -->
+                <div style="background: white; padding: 1.5rem; border-radius: 5px; margin-bottom: 2rem;">
+                    <label style="display: flex; align-items: flex-start; cursor: pointer;">
+                        <input type="checkbox" id="agree" name="agree" required style="margin-right: 1rem; margin-top: 0.3rem;">
+                        <span>
+                            I agree that my information will be used for recruitment purposes. I understand that I will 
+                            be contacted by A. Kanan Manpower for further processing and interviews. 
+                            <strong>*</strong>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                    Submit Application
+                </button>
+
+                <p style="text-align: center; color: var(--text-light); margin-top: 1.5rem; font-size: 0.9rem;">
+                    By submitting this form, you consent to our processing of your personal data.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Deployment Preparation -->
+    <section class="content-section" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>Deployment Preparation</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem;">
+                Once selected, we provide comprehensive preparation to ensure you are well-trained before stepping onto foreign land.
+            </p>
+
+            <div class="step">
+                <h3>📋 Pre-Deployment Orientation</h3>
+                <p>Understand your destination country's culture, laws, workplace expectations, and safety protocols. We conduct thorough briefings to prepare you mentally and practically.</p>
+            </div>
+
+            <div class="step">
+                <h3>🎓 Technical Training</h3>
+                <p>Receive specialized training for your position, including hands-on practice, certification preparation, and industry-specific skills development.</p>
+            </div>
+
+            <div class="step">
+                <h3>💬 Language Training</h3>
+                <p>Intensive language courses to improve your communication skills in English and the language of your destination country.</p>
+            </div>
+
+            <div class="step">
+                <h3>🏥 Health & Medical Preparation</h3>
+                <p>Complete medical examinations and vaccinations as required by your destination country. We ensure all health requirements are met.</p>
+            </div>
+
+            <div class="step">
+                <h3>📄 Documentation Support</h3>
+                <p>We guide you through all required paperwork, visa applications, and international documentation to ensure a smooth departure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About A. Kanan</h4>
+                    <p>POEA-Licensed recruitment agency serving overseas Filipino workers since 2003.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@akanan.com</p>
+                    <p>Phone: +63 (82) XXXX-XXXX</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A. Kanan Manpower Corporation. All rights reserved. | POEA License No. 123-LB-07-1620-R</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

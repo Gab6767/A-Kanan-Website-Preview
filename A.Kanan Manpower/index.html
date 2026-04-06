@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. Kanan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            
+            <div class="nav-brand">
+                <img src="Assets/Logo.png" alt="A. Kanan Manpower" class="nav-logo" />
+            </div>
+            
+            <div class="nav-right-group">
+                <div class="primary-actions">
+                    <a href="index.html" class="nav-link nav-link-home">Home</a>
+                    <a href="apply.html" class="nav-link btn-apply">Apply Now</a>
+                    
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="menu-container">
+                    <button class="menu-toggle" id="menuBtn">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="jobs.html">Job Opportunities</a></li>
+                        <li><a href="process.html">Recruitment Process</a></li>
+                        <li><a href="partners.html">Employers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+ 
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Trusted POEA-Licensed Partner Since 2003</h1>
+            <p>Empowering Overseas Filipino Workers with safe, high-quality placements around the world.</p>
+            <p class="hero-description">From Japan and the Middle East to Europe and North America, we connect skills to global opportunity with compliance, care, and exceptional service.</p>
+            <div class="hero-buttons">
+                <a href="jobs.html" class="btn btn-primary">Browse Job Openings</a>
+                <a href="apply.html" class="btn btn-secondary">Start Application</a>
+            </div>
+        </div>
+
+        <div class="hero-nav">
+            <div class="page-counter">1 / 4</div>
+            <span class="next-label">Next</span>
+            <div class="next-headline">Great new hiring & mobility support options</div>
+            <div class="arrow-controls">
+                <button class="arrow">‹</button>
+                <button class="arrow">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Openings Preview -->
+    <section class="job-preview">
+        <div class="container">
+            <h2>Featured Job Opportunities</h2>
+            <div class="job-grid">
+                <div class="job-card job-card-japan" data-flag="japan">
+                    <h3>Japan</h3>
+                    <p>Skilled Workers</p>
+                    <a href="jobs.html#japan" class="btn-small">Learn More</a>
+                </div>
+                <div class="job-card job-card-usa" data-flag="usa">
+                    <h3>United States</h3>
+                    <p>Teachers & Health Professionals</p>
+                    <a href="jobs.html#usa" class="btn-small">Learn More</a>
+                </div>
+                <div class="job-card job-card-germany" data-flag="germany">
+                    <h3>Germany</h3>
+                    <p>Nurses & Healthcare Workers</p>
+                    <a href="jobs.html#germany" class="btn-small">Learn More</a>
+                </div>
+                <div class="job-card job-card-middleeast" data-flag="middleeast">
+                    <h3>Middle East</h3>
+                    <p>Household & Skilled Workers</p>
+                    <a href="jobs.html#middleeast" class="btn-small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Job Categories</h2>
+            <div class="categories-grid">
+                <div class="category-box">
+                    <div class="icon-wrapper icon-centered">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                        <h4>Healthcare</h4>
+                    </div>
+                    <p>Nurses & Medical Professionals</p>
+                </div>
+                <div class="category-box">
+                    <div class="icon-wrapper icon-centered">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10L12 5L2 10l10 5l10-5zM6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        <h4>Education</h4>
+                    </div>
+                    <p>Teachers & Educators</p>
+                </div>
+                <div class="category-box">
+                    <div class="icon-wrapper icon-centered">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                        <h4>Technical</h4>
+                    </div>
+                    <p>Engineers & Programmers</p>
+                </div>
+                <div class="category-box">
+                    <div class="icon-wrapper icon-centered">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                        <h4>Service</h4>
+                    </div>
+                    <p>Household & Hospitality Workers</p>
+                </div>
+                <div class="category-box">
+                    <div class="icon-wrapper icon-centered">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                        <h4>Business</h4>
+                    </div>
+                    <p>Sales & Administrative</p>
+                </div>
+                <div class="category-box">
+                    <div class="icon-wrapper icon-centered">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a2 2 0 0 1-2.83-2.83l-3.94 3.6zM18 13l-8 8M7 10l-4 4 3 3 4-4"/>
+                        </svg>
+                        <h4>Skilled Trades</h4>
+                    </div>
+                    <p>Maintenance & Specialized Workers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Announcements -->
+    <section class="news">
+        <div class="container">
+            <h2>Latest News & Announcements</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-date">March 2026</span>
+                    <h3>Job Fair in Metro Manila</h3>
+                    <p>Join us for our upcoming recruitment fair with opportunities for nurses and healthcare professionals.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <span class="news-date">March 2026</span>
+                    <h3>Special Recruitment Drive</h3>
+                    <p>Now hiring experienced teachers for international schools across the USA and Europe.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+                <div class="news-card">
+                    <span class="news-date">February 2026</span>
+                    <h3>Deployment Success Stories</h3>
+                    <p>Meet our success stories: 20+ years of helping Filipino workers achieve their dreams abroad.</p>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Office Locations -->
+    <section class="locations">
+        <div class="container">
+            <h2>Our Office Locations</h2>
+            <p class="section-subtitle">Visit us at any of our branches nationwide</p>
+            <div class="locations-grid">
+                <div class="location-card featured">
+                    <div class="icon-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <h3>Davao City (Main Office)</h3>
+                    </div>
+                    <p>Metro Lifestyle Complex, F. Torres St., Davao City</p>
+                </div>
+                <div class="location-card">
+                    <h3>Manila</h3>
+                    <p>Gedisco Centre, A. Mabini St., Ermita</p>
+                </div>
+                <div class="location-card">
+                    <h3>General Santos</h3>
+                    <p>Patridge Building, J. Catolico Avenue</p>
+                </div>
+                <!-- <div class="location-card">
+                    <h3>Cagayan De Oro</h3>
+                    <p>Rodisa Building, Fernandez Velez St.</p>
+                </div> -->
+                <div class="location-card">
+                    <h3>Zamboanga</h3>
+                    <p>CMG Centre, Veterans Avenue</p>
+                </div>
+                <!-- <div class="location-card">
+                    <h3>Nueva Vizcaya</h3>
+                    <p>Tam-an Building, Solano</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- <div class="footer-section">
+                    <h4>About A. Kanan</h4>
+                    <p>POEA-Licensed recruitment agency serving overseas Filipino workers since 2003.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="jobs.html">Job Opportunities</a></li>
+                        <li><a href="apply.html">Apply Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div> -->
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@akanan.com</p>
+                    <p>Phone: +63 (82) XXXX-XXXX</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 A. Kanan Manpower Corporation. All rights reserved. | POEA License No. 123-LB-07-1620-R</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
